@@ -1,234 +1,506 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[HAZE DUPE MC]</title>
-    <link rel="icon" type="image/png" href="media/favicon.png">
+
+    <title>HAZE DUPE MC</title>
+
+    <link rel="icon" type="image/png" href="https://i.imgur.com/miFzOMD.png">
     <link rel="stylesheet" href="media/style.css">
+
     <link href="https://fonts.bunny.net/css?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
+
 <body>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <nav class="desktop_navbar">
-      <a href="#"><img class="desktop_navbar_logo_img" src="media/logo_small.png" alt="logo"></a>
-      <a href="https://wiki.example.com/" class="desktop_navbar_link">Wiki</a>
-      <a href="#discord" class="desktop_navbar_link scroll">Community</a>
-      <a href="#about" class="desktop_navbar_link scroll">About Us</a>
-      <div class="desktop_navbar_link2_div">
-          <a href="#join" class="desktop_navbar_link2 scroll">Join Us!</a>
-      </div>
-    </nav>
-    <div class="mobile_navbar">
-      <a href="#" class="mobile_navbar_logo_img_a"><img class="mobile_navbar_logo_img" src="media/logo_small.png" alt="logo"></a>
-      <div id="mobile_navbar_links">
-          <a class="mobile_navbar_link" onclick="mobile_navbar_link_hider()" href="https://wiki.example.com/">Wiki</a>
-          <a class="mobile_navbar_link scroll" onclick="mobile_navbar_link_hider()" href="#discord">Community</a>
-          <a class="mobile_navbar_link scroll" onclick="mobile_navbar_link_hider()" href="#about">About Us</a>
-          <a class="mobile_navbar_link scroll" onclick="mobile_navbar_link_hider()" href="#join">Join Us</a>
-        </div>
-        <div class="icon" onclick="mobile_navbar_link_hider()">
-            <i class="fa fa-bars"></i>
-        </div>
-        <script>
-            function mobile_navbar_link_hider() {
-            var x = document.getElementById("mobile_navbar_links");
-            if (x.style.display === "flex") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "flex";
-            }
-            } 
-        </script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- NAVBAR -->
+
+<nav class="desktop_navbar">
+
+    <a href="#">
+        <img class="desktop_navbar_logo_img"
+        src="https://i.imgur.com/miFzOMD.png"
+        alt="logo">
+    </a>
+
+    <a href="#more" class="desktop_navbar_link scroll">Features</a>
+
+    <a href="#discord" class="desktop_navbar_link scroll">Discord</a>
+
+    <a href="#about" class="desktop_navbar_link scroll">About</a>
+
+    <div class="desktop_navbar_link2_div">
+        <a href="#join"
+        class="desktop_navbar_link2 scroll">
+        Join Now
+        </a>
     </div>
-    <div class="mainflex">
-      <div class="main1">
+
+</nav>
+
+<!-- MOBILE NAVBAR -->
+
+<div class="mobile_navbar">
+
+    <a href="#"
+    class="mobile_navbar_logo_img_a">
+
+        <img class="mobile_navbar_logo_img"
+        src="https://i.imgur.com/miFzOMD.png"
+        alt="logo">
+
+    </a>
+
+    <div id="mobile_navbar_links">
+
+        <a class="mobile_navbar_link scroll"
+        onclick="mobile_navbar_link_hider()"
+        href="#more">
+        Features
+        </a>
+
+        <a class="mobile_navbar_link scroll"
+        onclick="mobile_navbar_link_hider()"
+        href="#discord">
+        Discord
+        </a>
+
+        <a class="mobile_navbar_link scroll"
+        onclick="mobile_navbar_link_hider()"
+        href="#about">
+        About
+        </a>
+
+        <a class="mobile_navbar_link scroll"
+        onclick="mobile_navbar_link_hider()"
+        href="#join">
+        Join
+        </a>
+
+    </div>
+
+    <div class="icon"
+    onclick="mobile_navbar_link_hider()">
+
+        <i class="fa fa-bars"></i>
+
+    </div>
+
+</div>
+
+<script>
+function mobile_navbar_link_hider() {
+
+    var x = document.getElementById("mobile_navbar_links");
+
+    if (x.style.display === "flex") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "flex";
+    }
+}
+</script>
+
+<!-- MAIN -->
+
+<div class="mainflex">
+
+    <!-- HERO -->
+
+    <div class="main1">
+
         <a class="main1_logo_a" href="#">
-          <img class="main1_logo" src="media/logo.png" alt="logo">
+
+            <img class="main1_logo"
+            src="https://i.imgur.com/miFzOMD.png"
+            alt="HazeDupe Logo">
+
         </a>
+
         <div class="main1_description">
-          <a>Minecraft,<br>like</a>
-          <a class="main1_actcent">already done before</a><a>.</a>
-        </div>
-        <div class="main1_ipcopier_div">
-          <button class="main1_ipcopier" onclick="copyText()" type="button">
-            <span class="main1_ipcopier_text1">HazeDupe.minehut.gg</span>
-            <br>
-            <span class="main1_ipcopier_text2">Click to copy</span>
-          </button>
-          <script>
-            function copyText() {
-                navigator.clipboard.writeText
-            ("play.example.com");
-                }
-            $(document).ready(function() {
-            $('.main1_ipcopier').click(function() {
-                var popup = $('<div>', { class: 'main1_popup' })
-                .append($('<h3 class="copy_confirm">').text('Copied IP to clipboard'))
-                $(this).after(popup);
-                setTimeout(function() {
-                popup.remove();
-                }, 1000);
-            });
-            });
-        </script>
-        </div>
-        <a href="#more" class="scroll">
-          <img alt="downarrow" class="main1_downarrow" src="media/downarrow.png">
-        </a>
-        <script>
-          const scrollLinks = document.querySelectorAll('.scroll');
-          scrollLinks.forEach(function(link) {
-            link.addEventListener('click', function(event) {
-              event.preventDefault();
-              const target = document.querySelector(link.getAttribute('href'));
-              const offsetTop = target.offsetTop;
-              window.scrollTo({
-                top: offsetTop,
-                behavior: 'smooth'
-              });
-            });
-          });
-        </script>
-      </div>
-      <div id="more"></div>
-      <div class="main2">
-        <a class="headline">What we have</a>
-        <div class="main2_features_div">
-          <div class="main2_feature">
-            <img class="main2_feature_img" alt="Feature Image" src="media/placeholder.png">
-            <a class="main2_feature_headline">Feature 1</a>
-            <a class="main2_feature_text">Feature description</a>
-          </div>
-          <div class="main2_feature">
-            <img class="main2_feature_img" alt="Feature Image" src="media/placeholder.png">
-            <a class="main2_feature_headline">Feature 2</a>
-            <a class="main2_feature_text">Feature description</a>
-          </div>
-          <div class="main2_feature">
-            <img class="main2_feature_img" alt="Feature Image" src="media/placeholder.png">
-            <a class="main2_feature_headline">Feature 3</a>
-            <a class="main2_feature_text">Feature description</a>
-          </div>
-          <div class="main2_feature">
-            <img class="main2_feature_img" alt="Feature Image" src="media/placeholder.png">
-            <a class="main2_feature_headline">Feature 4</a>
-            <a class="main2_feature_text">Feature description</a>
-          </div>
-          <div class="main2_feature">
-            <img class="main2_feature_img" alt="Feature Image" src="media/placeholder.png">
-            <a class="main2_feature_headline">Feature 5</a>
-            <a class="main2_feature_text">Feature description</a>
-          </div>
-        </div>
-      </div>
-      <div id="discord"></div>
-      <div class="main4">
-        <a class="headline">Join the Discord</a>
-        <div class="main4_dc_div">
-          <iframe class="main4_dc_widget" src="https://imgur.com/78RPeUY.png" width="350" height="500" title="discord" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-          <div class="main4_dc_description_div">
-            <a class="main4_dc_description_title">Let's talk!</a>
-            <a class="main4_dc_description"> ・Meet other players <br> ・Ask questions <br> ・Get notified about updates <br> ・Give feedback  <br><br> &amp; more </a>
-            <a href="https://discord.gg/INVITE" class="main4_dc_button_a">
-              <div class="main4_dc_button">Join</div>
+
+            <a>The Ultimate</a><br>
+
+            <a class="main1_actcent">
+            Dupe & Lifesteal
             </a>
-          </div>
+
+            <a>Experience.</a>
+
         </div>
-      </div>
-      <div id="about"></div>
-      <div class="main5">
-        <a class="headline">Who we are</a>
-        <div class="main5_admin_div">
-          <div class="main5_admins_div main5_admins_dev_type2">
-            <img class="main5_admins_img" alt="admin member img" src="media/member_placeholder.webp">
-            <div class="main5_admins_description_div">
-              <a class="main5_admins_description_rank main5_admins_description_rank_owner">[Owner]</a>
-              <a class="main5_admins_description_title" href="https://example.com">Owner Name</a>
-              <a class="main5_admins_description">Owner<br>description</a>
-            </div>
-          </div>
-          <div class="main5_admins_div main5_admins_dev_type1">
-            <img class="main5_admins_img" alt="admin member img" src="media/member_placeholder.webp">
-            <div class="main5_admins_description_div">
-              <a class="main5_admins_description_rank main5_admins_description_rank_admin">[Admin]</a>
-              <a class="main5_admins_description_title" href="https://example.com">Admin Name</a>
-              <a class="main5_admins_description">Admin<br>description</a>
-            </div>
-          </div>
+
+        <!-- COPY IP BUTTON -->
+
+        <div class="main1_ipcopier_div">
+
+            <button class="main1_ipcopier"
+            onclick="copyText()"
+            type="button">
+
+                <span class="main1_ipcopier_text1">
+                HazeDupe.minehut.gg
+                </span>
+
+                <br>
+
+                <span class="main1_ipcopier_text2">
+                Click to copy IP
+                </span>
+
+            </button>
+
         </div>
-        <div class="main5_supporter_div">
-          <div class="main5_supporters_div">
-            <img class="main5_supporters_img" alt="supporters member img" src="media/member_placeholder.webp">
-            <div class="main5_supporters_description_div">
-              <a class="main5_supporters_description_rank main5_supporters_description_rank_supporter">[Supporter]</a>
-              <a class="main5_supporters_description_title">Replacable Supporter 1</a>
-              <a class="main5_supporters_description">Supporter<br>Description</a>
-            </div>
-          </div>
-          <div class="main5_supporters_div">
-            <img class="main5_supporters_img" alt="supporters member img" src="media/member_placeholder.webp">
-            <div class="main5_supporters_description_div">
-              <a class="main5_supporters_description_rank main5_supporters_description_rank_supporter">[Supporter]</a>
-              <a class="main5_supporters_description_title">Replacable Supporter 2</a>
-              <a class="main5_supporters_description">Supporter<br>Description</a>
-            </div>
-          </div>
-          <div class="main5_supporters_div">
-            <img class="main5_supporters_img" alt="supporters member img" src="media/member_placeholder.webp">
-            <div class="main5_supporters_description_div">
-              <a class="main5_supporters_description_rank main5_supporters_description_rank_supporter">[Supporter]</a>
-              <a class="main5_supporters_description_title">Replacable Supporter 3</a>
-              <a class="main5_supporters_description">Supporter<br>Description</a>
-            </div>
-          </div>
-          <div class="main5_supporters_div">
-            <img class="main5_supporters_img" alt="supporters member img" src="media/member_placeholder.webp">
-            <div class="main5_supporters_description_div">
-              <a class="main5_supporters_description_rank main5_supporters_description_rank_supporter">[Supporter]</a>
-              <a class="main5_supporters_description_title">Replacable Supporter 4</a>
-              <a class="main5_supporters_description">Supporter<br>Description</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="join"></div>
-      <div class="main3">
-        <a class="headline">How to join</a>
-        <div class="main3_join_div_div">
-          <div class="main3_join_div">
-            <a class="main3_join_title">Java</a>
-            <div class="main3_join_content_div">
-              <div class="main3_join_categories">
-                <a>IP:</a>
-                <a>Version:</a>
-              </div>
-              <div class="main3_join_values">
-                <a>play.example.com</a>
-                <a>1.20.1</a>
-              </div>
-            </div>
-          </div>
-          <div class="main3_join_div">
-            <a class="main3_join_title">Bedrock</a>
-            <div class="main3_join_content_div">
-              <div class="main3_join_categories">
-                <a>IP:</a>
-                <a>Port:</a>
-              </div>
-              <div class="main3_join_values">
-                <a>be.example.com</a>
-                <a>69420</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+
+        <script>
+        function copyText() {
+            navigator.clipboard.writeText("HazeDupe.minehut.gg");
+        }
+
+        $(document).ready(function() {
+
+            $('.main1_ipcopier').click(function() {
+
+                var popup = $('<div>', {
+                    class: 'main1_popup'
+                })
+
+                .append(
+                    $('<h3 class="copy_confirm">')
+                    .text('Copied IP to clipboard')
+                )
+
+                $(this).after(popup);
+
+                setTimeout(function() {
+                    popup.remove();
+                }, 1000);
+
+            });
+
+        });
+        </script>
+
+        <a href="#more" class="scroll">
+
+            <img alt="downarrow"
+            class="main1_downarrow"
+            src="media/downarrow.png">
+
+        </a>
+
     </div>
-    <footer class="copyright_div">
-      <a href="https://github.com/FQQD/MCServer-Web-Template" class="copyright">Made by FQQD 2023 - Edited by [Name] [Year]</a>
-    </footer>
-  </body>
+
+    <!-- FEATURES -->
+
+    <div id="more"></div>
+
+    <div class="main2">
+
+        <a class="headline">
+        What HazeDupe Has
+        </a>
+
+        <div class="main2_features_div">
+
+            <div class="main2_feature">
+
+                <img class="main2_feature_img"
+                alt="Feature Image"
+                src="https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=1200&auto=format&fit=crop">
+
+                <a class="main2_feature_headline">
+                OP DUPES
+                </a>
+
+                <a class="main2_feature_text">
+                Find insane glitches and create the most overpowered gear possible.
+                </a>
+
+            </div>
+
+            <div class="main2_feature">
+
+                <img class="main2_feature_img"
+                alt="Feature Image"
+                src="https://images.unsplash.com/photo-1542751110-97427bbecf20?q=80&w=1200&auto=format&fit=crop">
+
+                <a class="main2_feature_headline">
+                LIFESTEAL
+                </a>
+
+                <a class="main2_feature_text">
+                Eliminate enemies and steal hearts to become the strongest player.
+                </a>
+
+            </div>
+
+            <div class="main2_feature">
+
+                <img class="main2_feature_img"
+                alt="Feature Image"
+                src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop">
+
+                <a class="main2_feature_headline">
+                ACTIVE EVENTS
+                </a>
+
+                <a class="main2_feature_text">
+                Weekly server events, giveaways, PvP fights, and rare loot drops.
+                </a>
+
+            </div>
+
+            <div class="main2_feature">
+
+                <img class="main2_feature_img"
+                alt="Feature Image"
+                src="https://images.unsplash.com/photo-1526379095098-d400fd0bf935?q=80&w=1200&auto=format&fit=crop">
+
+                <a class="main2_feature_headline">
+                CUSTOM FEATURES
+                </a>
+
+                <a class="main2_feature_text">
+                Unique plugins, economy systems, crates, and custom gameplay.
+                </a>
+
+            </div>
+
+            <div class="main2_feature">
+
+                <img class="main2_feature_img"
+                alt="Feature Image"
+                src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1200&auto=format&fit=crop">
+
+                <a class="main2_feature_headline">
+                24/7 ONLINE
+                </a>
+
+                <a class="main2_feature_text">
+                Lag-free gameplay with an always-online community and fast support.
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- DISCORD -->
+
+    <div id="discord"></div>
+
+    <div class="main4">
+
+        <a class="headline">
+        Join Our Discord
+        </a>
+
+        <div class="main4_dc_div">
+
+            <iframe class="main4_dc_widget"
+            src="https://discord.com/widget?id=YOURSERVERID&theme=dark"
+            width="350"
+            height="500"
+            title="discord"
+            sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts">
+            </iframe>
+
+            <div class="main4_dc_description_div">
+
+                <a class="main4_dc_description_title">
+                Join The Community
+                </a>
+
+                <a class="main4_dc_description">
+
+                ・Meet players <br>
+                ・Get updates <br>
+                ・Win giveaways <br>
+                ・Join events <br>
+                ・Talk with staff <br><br>
+
+                & more
+
+                </a>
+
+                <a href="https://discord.gg/YOURINVITE"
+                class="main4_dc_button_a">
+
+                    <div class="main4_dc_button">
+                    Join Discord
+                    </div>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ABOUT -->
+
+    <div id="about"></div>
+
+    <div class="main5">
+
+        <a class="headline">
+        Staff Team
+        </a>
+
+        <div class="main5_admin_div">
+
+            <div class="main5_admins_div main5_admins_dev_type2">
+
+                <img class="main5_admins_img"
+                alt="Owner"
+                src="https://mc-heads.net/avatar/Notch">
+
+                <div class="main5_admins_description_div">
+
+                    <a class="main5_admins_description_rank
+                    main5_admins_description_rank_owner">
+                    [Owner]
+                    </a>
+
+                    <a class="main5_admins_description_title">
+                    Haze
+                    </a>
+
+                    <a class="main5_admins_description">
+                    Creator of HazeDupe and manager of the server community.
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- JOIN -->
+
+    <div id="join"></div>
+
+    <div class="main3">
+
+        <a class="headline">
+        How To Join
+        </a>
+
+        <div class="main3_join_div_div">
+
+            <!-- JAVA -->
+
+            <div class="main3_join_div">
+
+                <a class="main3_join_title">
+                Java Edition
+                </a>
+
+                <div class="main3_join_content_div">
+
+                    <div class="main3_join_categories">
+
+                        <a>IP:</a>
+                        <a>Version:</a>
+
+                    </div>
+
+                    <div class="main3_join_values">
+
+                        <a>HazeDupe.minehut.gg</a>
+                        <a>1.21+</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- BEDROCK -->
+
+            <div class="main3_join_div">
+
+                <a class="main3_join_title">
+                Bedrock Edition
+                </a>
+
+                <div class="main3_join_content_div">
+
+                    <div class="main3_join_categories">
+
+                        <a>IP:</a>
+                        <a>Port:</a>
+
+                    </div>
+
+                    <div class="main3_join_values">
+
+                        <a>HazeDupe.bedrock.minehut.gg</a>
+                        <a>19132</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+
+<footer class="copyright_div">
+
+    <a href="#"
+    class="copyright">
+
+    © HazeDupe MC 2026
+
+    </a>
+
+</footer>
+
+<!-- SMOOTH SCROLL -->
+
+<script>
+const scrollLinks = document.querySelectorAll('.scroll');
+
+scrollLinks.forEach(function(link) {
+
+    link.addEventListener('click', function(event) {
+
+        event.preventDefault();
+
+        const target = document.querySelector(
+            link.getAttribute('href')
+        );
+
+        const offsetTop = target.offsetTop;
+
+        window.scrollTo({
+            top: offsetTop,
+            behavior: 'smooth'
+        });
+
+    });
+
+});
+</script>
+
+</body>
 </html>
