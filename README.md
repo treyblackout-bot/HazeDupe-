@@ -1,5 +1,5 @@
 
-![Logo](https://imgur.com/VE1nWC7.png)
+![Logo](file:///C:/Users/Brody/Desktop/67d66c3f-fd6c-4f99-801e-f1361b83a354.png)
 
 
 # Welcome To HazeDupe
@@ -7,8 +7,6 @@
 A template for a modern looking website to promote your Minecraft server.
 
 Written with HTML and a lot of CSS and the minimal usage of JavaScript.
-
-Test it out: https://fqqd.github.io/MCServer-Web-Template/index.html
 
 
 ## Features
