@@ -1,5 +1,6 @@
 
-![Logo](file:///C:/Users/Brody/Desktop/67d66c3f-fd6c-4f99-801e-f1361b83a354.png)
+![Logo](<img width="1991" height="790" alt="image" src="https://github.com/user-attachments/assets/f5439aaf-c7e3-43b8-8bf9-6a1e73fef4b4" />
+)
 
 
 # Welcome To HazeDupe
