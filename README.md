@@ -1,5 +1,5 @@
 
-![Logo](https://chatgpt.com/backend-api/estuary/content?id=file_000000006a4c71fd80fa3aa6983d06c6&ts=494155&p=fs&cid=1&sig=569ef01a9fd81f5a778a963086ecf45e35ed46fcd5d1791963c84732fd73c798&v=0)
+![Logo](https://imgur.com/VE1nWC7.png)
 
 
 # Welcome To HazeDupe
