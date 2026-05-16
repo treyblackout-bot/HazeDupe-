@@ -1,5 +1,5 @@
 
-![Logo](https://imgur.com/a/6786767676767-PgNHQbI)
+![Logo]([https://imgur.com/a/6786767676767-PgNHQbI](https://imgur.com/a/miFzOMD))
 
 
 # Welcome To HazeDupe
