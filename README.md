@@ -1,5 +1,5 @@
 
-![Logo](https://imgur.com/VE1nWC7.png)
+![Logo]([https://imgur.com/VE1nWC7.png](https://imgur.com/a/miFzOMD))
 
 
 # FQQD's MCServer Website Template 1.0
