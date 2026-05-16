@@ -1,6 +1,5 @@
 
-![Logo](<img width="1991" height="790" alt="image" src="https://github.com/user-attachments/assets/f5439aaf-c7e3-43b8-8bf9-6a1e73fef4b4" />
-)
+![Logo](https://chatgpt.com/backend-api/estuary/content?id=file_000000006a4c71fd80fa3aa6983d06c6&ts=494155&p=fs&cid=1&sig=569ef01a9fd81f5a778a963086ecf45e35ed46fcd5d1791963c84732fd73c798&v=0)
 
 
 # Welcome To HazeDupe
